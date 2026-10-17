@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#123b43">
+    <title>CareBridge | Patient chat</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <script src="/static/app.js" defer></script>
+  </head>
+  <body data-page="patient">
+    <a class="skip-link" href="#main">Skip to chat</a>
+    <header class="site-header">
+      <div class="brand-mark" aria-hidden="true">CB</div>
+      <div><p class="eyebrow">CareBridge</p><h1>Understand your discharge sheet</h1></div>
+      <a class="header-link" href="/nurse">Nurse queue</a>
+    </header>
+    <main id="main" class="layout">
+      <div id="run-mode-banner" class="demo-banner" role="alert" aria-live="polite" hidden>
+        ⚠ DEMO MODE — synthetic data only, not medical advice. This service is not monitored for emergencies.
+      </div>
+      <section class="panel chat-panel" aria-labelledby="chat-heading">
+        <div class="panel-heading">
+          <div><p class="eyebrow">Patient assistant</p><h2 id="chat-heading">Ask about your document</h2></div>
+          <span id="language-indicator" class="language-pill">Language: —</span>
+        </div>
+        <label for="patient-select">Choose a demo patient</label>
+        <select id="patient-select" name="patient">
+          <option value="">Loading synthetic patients…</option>
+        </select>
+        <p id="patient-document" class="muted" aria-live="polite"></p>
+        <div class="quick-questions" aria-label="Example questions">
+          <button type="button" class="chip" data-question="Can I shower?">Can I shower?</button>
+          <button type="button" class="chip" data-question="When do I restart my tablets?">When do I restart my tablets?</button>
+        </div>
+        <div id="conversation" class="conversation" role="log" aria-live="polite" aria-relevant="additions">
+          <p class="empty-state">Choose a synthetic patient, then ask a question about their discharge sheet.</p>
+        </div>
+        <form id="chat-form" class="chat-form">
+          <label for="message">Your question</label>
+          <textarea id="message" name="message" rows="3" maxlength="1000" required
+            placeholder="Type a question in English, Telugu, or Hindi"></textarea>
+          <div class="form-footer">
+            <span id="form-hint" class="muted">Do not enter real personal or medical information.</span>
+            <button id="send-button" class="button-primary" type="submit">Send question</button>
+          </div>
+        </form>
+      </section>
+      <aside class="panel metrics-panel" aria-labelledby="metrics-heading">
+        <p class="eyebrow">Service status</p><h2 id="metrics-heading">Demo metrics</h2>
+        <p class="amd-label">Served on AMD: <strong id="amd-status">—</strong></p>
+        <dl id="metrics-list" class="metrics-list">
+          <div><dt>Model</dt><dd id="metric-model">Loading…</dd></div>
+          <div><dt>Tokens / sec</dt><dd id="metric-tps">—</dd></div>
+          <div><dt>Average latency</dt><dd id="metric-latency">—</dd></div>
+          <div><dt>Answered</dt><dd id="metric-answered">0</dd></div>
+          <div><dt>Escalated</dt><dd id="metric-escalated">0</dd></div>
+        </dl>
+        <p class="small-note">A red-flag message is sent to the nurse queue. CareBridge cannot contact emergency services.</p>
+      </aside>
+    </main>
+    <footer class="site-footer">Synthetic demonstration only · <a href="/nurse">For nurse reviewers</a></footer>
+  </body>
+</html>

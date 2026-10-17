@@ -1,0 +1,73 @@
+chest_pain:
+  - ఛాతి నొప్పి
+  - ఛాతీ నొప్పి
+  - తీవ్రమైన ఛాతి నొప్పి
+  - విపరీతమైన ఛాతి నొప్పి
+  - గుండె నొప్పి
+  - గుండె నొప్పి వస్తోంది
+  - chati noppi
+  - chaathi noppi
+  - gunde noppi
+  - chest pain
+breathing_difficulty:
+  - శ్వాస తీసుకోవడం కష్టం
+  - శ్వాస తీసుకోవడం కష్టంగా ఉంది
+  - ఊపిరి ఆడటం లేదు
+  - oopiri aadatledu
+  - swasa teesukolekapotunnanu
+  - swasa kastam
+  - breathing kastam
+severe_bleeding:
+  - రక్తస్రావం ఆగడం లేదు
+  - రక్తం ఆగడం లేదు
+  - raktham agadam ledu
+  - raktham aagatledu
+  - bleeding aagatledu
+fainting:
+  - స్పృహ కోల్పోయాను
+  - స్పృహ తప్పిపోయాను
+  - spruha tappindi
+  - faint ayya
+stroke:
+  - ముఖం వాలిపోయింది
+  - మాట తడబడుతోంది
+  - oka vaipu balahinanga undi
+allergic_reaction:
+  - తీవ్రమైన అలర్జీ
+  - గొంతు మూసుకుపోతోంది
+  - mukham vaapu
+  - gonthu bigusukupotundi
+overdose:
+  - ఎక్కువ మాత్రలు తీసుకున్నాను
+  - చాలా మాత్రలు వేసుకున్నాను
+  - ekkuva tablets teesukunna
+  - overdose ayyindi
+self_harm:
+  - నన్ను నేను చంపుకోవాలనుకుంటున్నాను
+  - నన్ను నేను గాయపరచుకోవాలనిపిస్తోంది
+  - నన్ను గాయపరచుకోవాలని ఉంది
+  - బతకాలని లేదు
+  - nannu nenu champukovali
+  - brathakalani ledu
+fever_wound_infection:
+  - జ్వరం మరియు గాయం ఇన్ఫెక్షన్
+  - గాయం నుండి చీము మరియు జ్వరం
+  - gaayam nundi cheemu jvaram
+  - అధిక జ్వరం మరియు గాయం ఎర్రగా ఉంది
+  - adhika jvaram gaayam infection
+vision_loss:
+  - అకస్మాత్తుగా చూపు పోయింది
+  - ఒక్కసారిగా కనిపించడం లేదు
+  - చూపు పోయింది
+  - కనిపించడం లేదు
+  - chupu poyindi
+  - sudden ga kanipinchadam ledu
+calf_swelling_pain:
+  - కాలి వాపు మరియు నొప్పి
+  - పిక్క వాపు కాలి నొప్పి
+  - kaalu vaapu noppi
+  - calf vaapu noppi
+severe_abdominal_pain:
+  - తీవ్రమైన కడుపు నొప్పి వాంతులు
+  - కడుపు నొప్పి మరియు వాంతులు
+  - teevramaina kadupu noppi vomit

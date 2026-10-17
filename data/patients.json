@@ -1,0 +1,20 @@
+[
+  {
+    "patient_id": "demo-appendectomy",
+    "patient_alias": "Samira Vale (fictional)",
+    "doc_id": "doc-appendectomy-001",
+    "document_name": "Appendectomy discharge sheet"
+  },
+  {
+    "patient_id": "demo-cataract",
+    "patient_alias": "Dev Anand (fictional)",
+    "doc_id": "doc-cataract-001",
+    "document_name": "Cataract surgery discharge sheet"
+  },
+  {
+    "patient_id": "demo-knee",
+    "patient_alias": "Noor Iyer (fictional)",
+    "doc_id": "doc-knee-001",
+    "document_name": "Knee arthroscopy discharge sheet"
+  }
+]

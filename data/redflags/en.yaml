@@ -1,0 +1,87 @@
+chest_pain:
+  - chest pain
+  - chesst pain
+  - crushing chest
+  - crushng chest
+  - pressure in my chest
+  - pressure on my chest
+  - pressure on the chest
+  - elephant sitting on my chest
+breathing_difficulty:
+  - difficulty breathing
+  - cannot breathe
+  - can't breathe
+  - cant breathe
+  - cant breath
+  - cant brreathe
+  - shortness of breath
+  - shortnes of breath
+  - struggling to breathe
+  - struggling for air
+  - cannot catch my breath
+severe_bleeding:
+  - severe bleeding
+  - uncontrolled bleeding
+  - heavy bleeding
+  - bleeding won't stop
+  - bleedng won't stop
+  - bleeding will not stop
+  - soaking through bandages
+fainting:
+  - fainted
+  - fainting
+  - faintng
+  - passed out
+  - unconscious
+stroke:
+  - face drooping
+  - face is drooping
+  - slurred speech
+  - one side is weak
+  - sudden weakness on one side
+  - weak and numb
+allergic_reaction:
+  - severe allergic reaction
+  - throat is closing
+  - throat is swelling
+  - tongue is swelling
+  - face is swelling
+  - sweling and closing
+overdose:
+  - overdose
+  - took too many tablets
+  - took too many pills
+  - took an extra dose
+  - extra dossage
+  - 10 sleeping pills
+self_harm:
+  - want to kill myself
+  - thoughts of self harm
+  - hurt myself
+  - do not want to live
+  - kill myself
+fever_wound_infection:
+  - high fever and infected wound
+  - fever and wound looks infected
+  - fever with pus from the wound
+  - pus draining
+  - yellow fluid
+vision_loss:
+  - sudden vision loss
+  - sudn vision loss
+  - suddenly cannot see
+  - suddenly can't see
+  - lost my vision
+calf_swelling_pain:
+  - calf swelling with leg pain
+  - swollen calf and leg pain
+  - calf is swollen and painful
+  - my calf is swollen and my leg hurts
+  - leg is throbbing and calf
+severe_abdominal_pain:
+  - severe abdominal pain with vomiting
+  - severe stomach pain and vomiting
+  - severe stomach pain with vomiting
+  - severe belly pain and vomiting
+  - severe belly pain
+  - sevear belly pain

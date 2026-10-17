@@ -1,0 +1,6 @@
+{
+  "split": "dev",
+  "purpose": "calibration-only",
+  "records": 40,
+  "predictions_file": "eval\\dev_predictions.jsonl"
+}

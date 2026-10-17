@@ -1,0 +1,107 @@
+:root {
+  color-scheme: light;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #182c31;
+  background: #f3f7f6;
+  font-size: 16px;
+  line-height: 1.55;
+  --ink: #182c31;
+  --muted: #50656a;
+  --teal: #12636b;
+  --border: #cbd9d8;
+  --surface: #fff;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+a { color: #075965; text-underline-offset: 0.16em; }
+button, select, textarea, input { font: inherit; }
+button, select { cursor: pointer; }
+.skip-link { position: absolute; left: -9999px; top: 0; }
+.skip-link:focus { left: 1rem; z-index: 5; background: #fff; padding: 0.75rem; }
+.site-header {
+  display: flex; align-items: center; gap: 1rem; padding: 1.15rem max(1rem, calc((100% - 1180px) / 2));
+  background: #123b43; color: #fff;
+}
+.brand-mark { display: grid; place-items: center; width: 2.8rem; height: 2.8rem; border-radius: 50%; background: #d3efdf; color: #123b43; font-weight: 800; }
+.site-header h1 { margin: 0; font-size: clamp(1.2rem, 3vw, 1.7rem); line-height: 1.2; }
+.eyebrow { margin: 0 0 0.15rem; text-transform: uppercase; letter-spacing: 0.09em; font-weight: 700; font-size: 0.72rem; }
+.header-link { margin-left: auto; color: #fff; font-weight: 650; }
+.layout, .nurse-layout { width: min(1180px, calc(100% - 2rem)); margin: 1.5rem auto; display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 1rem; align-items: start; }
+.demo-banner { grid-column: 1 / -1; background: #fde8e8; border: 2px solid #c81e1e; color: #9b1c1c; padding: 0.8rem 1rem; border-radius: 0.65rem; font-weight: 700; text-align: center; }
+.panel { background: var(--surface); border: 1px solid var(--border); border-radius: 0.8rem; padding: clamp(1rem, 3vw, 1.5rem); box-shadow: 0 3px 12px #123b4310; }
+.panel h2 { margin: 0.1rem 0 1rem; font-size: 1.3rem; }
+.panel-heading { display: flex; justify-content: space-between; align-items: start; gap: 1rem; }
+.panel-heading h2 { margin-bottom: 1rem; }
+.language-pill { background: #e9f2f2; padding: 0.35rem 0.65rem; border-radius: 99px; white-space: nowrap; font-size: 0.85rem; }
+.chat-panel label, .nurse-auth label, .resolve-form label { display: block; font-weight: 700; margin: 0.75rem 0 0.3rem; }
+select, textarea, input { width: 100%; border: 1px solid #778d91; color: var(--ink); border-radius: 0.45rem; padding: 0.65rem 0.75rem; background: #fff; }
+textarea { resize: vertical; }
+:focus-visible { outline: 3px solid #d68500; outline-offset: 2px; }
+.muted, .small-note { color: var(--muted); }
+.quick-questions { display: flex; flex-wrap: wrap; gap: 0.45rem; margin: 0.9rem 0; }
+.chip, .button-secondary { border: 1px solid #528087; background: #eff8f7; color: #104b53; border-radius: 99px; padding: 0.42rem 0.75rem; font-weight: 650; }
+.conversation { min-height: 170px; max-height: 42vh; overflow-y: auto; border: 1px solid #d7e1e0; background: #f8fbfa; border-radius: 0.65rem; padding: 0.75rem; }
+.empty-state { color: var(--muted); padding: 0.5rem; }
+.message { max-width: 95%; padding: 0.75rem 0.9rem; border-radius: 0.65rem; margin: 0.5rem 0; }
+.message p { margin: 0.3rem 0; }
+.user-message { background: #e8eff1; margin-left: auto; }
+.assistant-message { border: 1px solid #c9d8d6; background: #fff; }
+.badge-green { background: #e7f5eb; border-color: #22733c; }
+.badge-amber { background: #fff3d8; border-color: #aa6900; }
+.badge-red { background: #fff0ef; border-color: #a82d25; }
+.status-badge, .priority { display: inline-block; font-weight: 800; text-transform: uppercase; font-size: 0.78rem; padding: 0.15rem 0.5rem; border-radius: 99px; }
+.status-badge { border: 1px solid currentColor; }
+.ticket-reference, .confidence { font-weight: 700; }
+details { margin-top: 0.65rem; border-top: 1px solid #d3dedc; padding-top: 0.55rem; }
+summary { cursor: pointer; font-weight: 700; }
+.citation-source { border-left: 3px solid #4b8585; padding-left: 0.7rem; color: #33494d; }
+.signal-list { font-size: 0.88rem; }
+.chat-form { margin-top: 1rem; }
+.form-footer { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-top: 0.6rem; }
+.button-primary { border: 0; background: #12636b; color: #fff; border-radius: 0.45rem; padding: 0.65rem 1rem; min-height: 44px; font-weight: 750; }
+.button-primary:hover { background: #0b4d54; }
+.button-primary:disabled { opacity: 0.6; cursor: wait; }
+.metrics-panel h2 { margin-bottom: 0.6rem; }
+.amd-label { background: #e5f2e9; border-radius: 0.5rem; padding: 0.55rem; }
+.metrics-list { margin: 0; }
+.metrics-list div { display: flex; justify-content: space-between; gap: 0.6rem; border-bottom: 1px solid #e1e8e7; padding: 0.55rem 0; }
+.metrics-list dt { color: var(--muted); }
+.metrics-list dd { margin: 0; font-weight: 700; text-align: right; }
+.small-note { font-size: 0.88rem; }
+.nurse-layout { grid-template-columns: minmax(0, 1fr) 300px; }
+.nurse-toolbar { min-width: 0; }
+.filter-label { display: flex; align-items: center; gap: 0.5rem; }
+.filter-label select { width: auto; }
+.nurse-auth { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 0.5rem; align-items: end; }
+.nurse-auth label { grid-column: 1 / -1; }
+.nurse-auth .button-secondary { min-height: 44px; }
+.queue-columns { display: grid; grid-template-columns: minmax(220px, 0.8fr) minmax(0, 1.2fr); gap: 1rem; margin-top: 0.6rem; }
+.ticket-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.5rem; max-height: 65vh; overflow: auto; }
+.ticket-button { display: grid; gap: 0.25rem; width: 100%; text-align: left; border: 1px solid var(--border); border-radius: 0.55rem; background: #fff; color: var(--ink); padding: 0.7rem; }
+.ticket-button:hover { border-color: var(--teal); background: #f1f8f7; }
+.ticket-button small { color: var(--muted); }
+.priority.urgent { background: #ffe1df; color: #8d201b; }
+.priority.normal { background: #fff1d2; color: #704600; }
+.ticket-detail { min-width: 0; border: 1px solid #d3dedc; border-radius: 0.6rem; padding: 1rem; overflow-wrap: anywhere; }
+.ticket-detail h3 { font-size: 1.05rem; }
+.ticket-detail h4 { margin-bottom: 0.2rem; }
+.resolve-form { border-top: 1px solid var(--border); margin-top: 1rem; padding-top: 0.4rem; }
+.error-message { color: #9c211a; font-weight: 700; }
+.site-footer { text-align: center; padding: 1rem; color: var(--muted); font-size: 0.9rem; }
+
+@media (max-width: 780px) {
+  .layout, .nurse-layout { grid-template-columns: 1fr; width: min(100% - 1rem, 620px); margin: 0.75rem auto; }
+  .metrics-panel { grid-row: auto; }
+  .queue-columns { grid-template-columns: 1fr; }
+  .ticket-list { max-height: 35vh; }
+}
+@media (max-width: 450px) {
+  .site-header { padding: 0.9rem 0.65rem; gap: 0.6rem; }
+  .brand-mark { width: 2.25rem; height: 2.25rem; flex: 0 0 auto; }
+  .header-link { font-size: 0.85rem; }
+  .panel-heading { flex-direction: column; }
+  .form-footer { align-items: stretch; flex-direction: column; }
+  .button-primary { width: 100%; }
+  .nurse-auth { grid-template-columns: 1fr; }
+}

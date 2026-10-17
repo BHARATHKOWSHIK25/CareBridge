@@ -1,0 +1,43 @@
+app = "carebridge"
+primary_region = "iad"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[env]
+  ENVIRONMENT = "production"
+  RUN_MODE = "live"
+  LLM_MODEL = "Qwen2.5-7B-Instruct"
+  LLM_TIMEOUT_SECONDS = "20"
+  GATE_ENABLED = "true"
+  GATE_THRESHOLD = "0.65"
+  EMBEDDINGS_ENABLED = "true"
+  DATABASE_URL = "sqlite:////app/runtime-data/carebridge.db"
+  REQUESTS_PER_MINUTE = "20"
+  MAX_MESSAGE_LENGTH = "1000"
+  EMERGENCY_CONTACT_TEXT = "your locally verified emergency services"
+  BACKEND = "local"
+  AMD_SERVED = "false"
+
+[http_service]
+  internal_port = 8000
+  force_https = true
+  auto_stop_machines = "stop"
+  auto_start_machines = true
+  min_machines_running = 1
+  processes = ["app"]
+
+[[http_service.checks]]
+  grace_period = "40s"
+  interval = "30s"
+  method = "GET"
+  timeout = "5s"
+  path = "/health"
+
+[[mounts]]
+  source = "carebridge_data"
+  destination = "/app/runtime-data"
+
+[[vm]]
+  size = "shared-cpu-2x"
+  memory = "2gb"

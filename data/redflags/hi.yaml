@@ -1,0 +1,81 @@
+chest_pain:
+  - सीने में दर्द
+  - सीने में बहुत तेज दर्द
+  - सीने में तेज दर्द
+  - छाती में दर्द
+  - छाती में बहुत दबाव
+  - छाती में दबाव
+  - seene mein dard
+  - seene me dard
+  - chaati me dard
+  - chhati me dard
+  - chest mein dard
+  - chest pain
+breathing_difficulty:
+  - सांस लेने में कठिनाई
+  - सांस लेने में बहुत कठिनाई
+  - सांस नहीं आ रही
+  - सांस नहीं आ रही है
+  - saans nahi aa rahi
+  - saans lene mein dikkat
+  - saans lene me dikkat
+severe_bleeding:
+  - बहुत ज्यादा खून बह रहा
+  - खून बंद नहीं हो रहा
+  - खून बंद नहीं हो रहा है
+  - khoon band nahi ho raha
+  - khoon ruk nahi raha
+  - bleeding ruk nahi rahi
+  - bleeding ho rahi hai ruk nahi rahi
+  - bleeding ruk nahi
+  - ruk nahi rahi
+fainting:
+  - बेहोश हो गया
+  - बेहोश हो गई
+  - होश खो दिया
+  - behosh ho gaya
+stroke:
+  - चेहरा टेढ़ा हो गया
+  - बोलने में लड़खड़ाहट
+  - शरीर के एक तरफ कमजोरी
+allergic_reaction:
+  - गंभीर एलर्जी
+  - गला बंद हो रहा
+  - जीभ सूज रही
+  - chehra sooj raha
+overdose:
+  - बहुत सारी गोलियां खा ली
+  - ज्यादा गोलियां ले ली
+  - bahut tablets le li
+  - overdose ho gaya
+self_harm:
+  - मैं खुद को मारना चाहता हूं
+  - मैं खुद को नुकसान पहुंचाना चाहता हूँ
+  - खुद को नुकसान पहुंचाना चाहता हूं
+  - जीने का मन नहीं करता
+  - khud ko nuksan pahunchana
+  - mar jana chahta hoon
+fever_wound_infection:
+  - तेज बुखार और घाव में संक्रमण
+  - घाव से मवाद और बुखार
+  - घाव से मवाद और तेज बुखार
+  - घाव से मवाद
+  - मवाद और बुखार
+  - ghaav se peep aur bukhar
+  - तेज बुखार और घाव लाल दिख रहा
+  - tez bukhar ghaav infected lag raha
+vision_loss:
+  - अचानक दिखाई देना बंद
+  - अचानक नजर चली गई
+  - नजर चली गई
+  - दिखाई नहीं दे रहा
+  - achanak dikhna band
+  - nazar chali gayi
+calf_swelling_pain:
+  - पिंडली में सूजन और पैर में दर्द
+  - टांग में दर्द के साथ सूजन
+  - pindli sooj gayi aur dard
+severe_abdominal_pain:
+  - तेज पेट दर्द और उल्टी
+  - पेट में बहुत दर्द और उल्टी
+  - pet dard aur ulti

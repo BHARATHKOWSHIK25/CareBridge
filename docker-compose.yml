@@ -1,0 +1,29 @@
+services:
+  carebridge:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: carebridge:latest
+    container_name: carebridge
+    env_file:
+      - .env.example
+      - path: .env
+        required: false
+    environment:
+      DATABASE_URL: sqlite:////app/runtime-data/carebridge.db
+      EMBEDDINGS_ENABLED: ${EMBEDDINGS_ENABLED:-true}
+      RUN_MODE: ${RUN_MODE:-demo}
+    ports:
+      - "${PORT:-8000}:${PORT:-8000}"
+    volumes:
+      - ${SQLITE_VOLUME_PATH:-carebridge-data}:/app/runtime-data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "python -c \"import os, urllib.request; port = os.environ.get('PORT', '8000'); urllib.request.urlopen(f'http://127.0.0.1:{port}/health', timeout=3)\""]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 40s
+
+volumes:
+  carebridge-data:

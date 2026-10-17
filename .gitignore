@@ -1,0 +1,15 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.db
+*.sqlite
+*.sqlite3
+eval/results_*.json
+eval/report_*.md
+eval/manual_review_*.csv
+eval/dev_predictions.jsonl
+eval/plots/*.png
+eval/gate_weights.json

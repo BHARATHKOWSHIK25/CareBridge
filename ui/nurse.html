@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#123b43">
+    <title>CareBridge | Nurse queue</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <script src="/static/app.js" defer></script>
+  </head>
+  <body data-page="nurse">
+    <a class="skip-link" href="#main">Skip to ticket queue</a>
+    <header class="site-header">
+      <div class="brand-mark" aria-hidden="true">CB</div>
+      <div><p class="eyebrow">CareBridge</p><h1>Nurse review queue</h1></div>
+      <a class="header-link" href="/">Patient chat</a>
+    </header>
+    <main id="main" class="nurse-layout">
+      <div id="run-mode-banner" class="demo-banner" role="alert" aria-live="polite" hidden>
+        ⚠ DEMO MODE — synthetic data only, not medical advice.
+      </div>
+      <section class="panel nurse-toolbar" aria-labelledby="queue-heading">
+        <div class="panel-heading"><div><p class="eyebrow">Human review</p><h2 id="queue-heading">Tickets</h2></div>
+          <label class="filter-label" for="ticket-filter">Show
+            <select id="ticket-filter"><option value="open">Open</option><option value="resolved">Resolved</option></select>
+          </label>
+        </div>
+        <div class="nurse-auth">
+          <label for="nurse-password">Nurse password (if configured)</label>
+          <input id="nurse-password" type="password" autocomplete="current-password">
+          <button id="save-password" class="button-secondary" type="button">Use password</button>
+        </div>
+        <p id="queue-status" class="muted" aria-live="polite">Refreshing every 5 seconds.</p>
+        <div class="queue-columns">
+          <ul id="ticket-list" class="ticket-list" aria-label="Tickets"></ul>
+          <article id="ticket-detail" class="ticket-detail" aria-live="polite">
+            <p class="empty-state">Select a ticket to review the full context.</p>
+          </article>
+        </div>
+      </section>
+      <aside class="panel metrics-panel" aria-labelledby="metrics-heading">
+        <p class="eyebrow">Service status</p><h2 id="metrics-heading">Demo metrics</h2>
+        <p class="amd-label">Served on AMD: <strong id="amd-status">—</strong></p>
+        <dl id="metrics-list" class="metrics-list">
+          <div><dt>Model</dt><dd id="metric-model">Loading…</dd></div>
+          <div><dt>Tokens / sec</dt><dd id="metric-tps">—</dd></div>
+          <div><dt>Average latency</dt><dd id="metric-latency">—</dd></div>
+          <div><dt>Answered</dt><dd id="metric-answered">0</dd></div>
+          <div><dt>Escalated</dt><dd id="metric-escalated">0</dd></div>
+        </dl>
+      </aside>
+    </main>
+    <footer class="site-footer">Synthetic demonstration only · <a href="/">Patient chat</a></footer>
+  </body>
+</html>
