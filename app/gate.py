@@ -23,7 +23,7 @@ def _weights() -> dict[str, float]:
     try:
         data = json.loads(Path(path).read_text(encoding="utf-8"))
         if isinstance(data, dict) and all(
-            key in data and isinstance(data[key], (float, int)) for key in DEFAULT_WEIGHTS
+            key in data and isinstance(data[key], float | int) for key in DEFAULT_WEIGHTS
         ):
             return {key: float(data[key]) for key in DEFAULT_WEIGHTS}
     except (OSError, json.JSONDecodeError, TypeError):
@@ -39,7 +39,7 @@ def _calibrated_threshold() -> float:
     path = Path(settings.gate_weights_file)
     try:
         value = json.loads(path.read_text(encoding="utf-8")).get("suggested_threshold")
-        if isinstance(value, (int, float)) and 0 <= value <= 1:
+        if isinstance(value, int | float) and 0 <= value <= 1:
             return float(value)
     except (OSError, json.JSONDecodeError, TypeError):
         logger.info("Calibrated threshold unavailable; using configured default.")
